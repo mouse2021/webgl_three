@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Chapter 1: Modernizr + yepnope example</title>
+	<script src="modernizr.js"></script>
+	<script src="yepnope.js"></script>
+</head>
+<body>
+	
+	<script>
+		
+		yepnope([{
+			test : Modernizr.localstorage,
+			yep : "localstorage.js",
+			nope : "localstorage.fallback.js"
+		}]);
+	
+	</script>
+	
+</body>
+</html>
